@@ -1,12 +1,17 @@
-﻿using System;
+﻿using DotNetStandardDemo.StandardLibrary;
+using static System.Console;
 
 namespace DotNetStandardDemo.CoreConsole
 {
-    class Program
+    // ReSharper disable once ClassNeverInstantiated.Global
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main()
         {
-            Console.WriteLine("Hello World!");
+            const string message = "This line was printed by a .Net Core console application using a .Net Standard library.";
+            Printer.Print(message);
+
+            ReadKey();
         }
     }
 }

@@ -5,4 +5,8 @@
     <TargetFramework>netcoreapp3.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\DotNetStandardDemo.StandardLibrary\DotNetStandardDemo.StandardLibrary.csproj" />
+  </ItemGroup>
+
 </Project>
